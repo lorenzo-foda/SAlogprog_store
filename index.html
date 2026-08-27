@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja foda</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+           
+        </a>
+
+        <div class="links-nav">
+            <a href="carrinho.html">carrinho</a>
+            <a href="index.html">início</a>
+        </div>
+        
+    </nav>
+    <main>
+        <div class="produtos">
+            <article class="tenis">
+                <img src="/imgs/tenis1.jpg" alt="tenis1">
+                <h2>Tenis um</h2>
+                <p>eh um tenis</p>
+                <strong>R$ 200.00</strong>
+
+                <button onclick="addCart(1, 'tenis1', 200.00)"> 
+                    adicionar ao carrinho
+                </button>
+            </article>
+
+            <article class="tenis">
+                <img src="/imgs/tenis2.jpg" alt="tenis2">
+                <h2>Tenis dois</h2>
+                <p>eh um tenis</p>
+                <strong>R$ 220.00</strong>
+
+                <button onclick="addCart(2, 'tenis2', 220.00)">
+                    adicionar ao carrinho
+                </button>
+            </article>
+
+            <article class="tenis">
+                <img src="/imgs/tenis3.jpg" alt="tenis3">
+                <h2>Tenis tres</h2>
+                <p>eh um tenis</p>
+                <strong>R$ 301.00</strong>
+
+                <button onclick="addCart(3, 'tenis3', 301.00)">
+                    adicionar ao carrinho
+                </button>
+            </article>
+        </div>
+
+        <div></div>
+        <div></div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

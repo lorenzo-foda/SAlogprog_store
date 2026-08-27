@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+body {
+        /* Specify the path to your image */
+        background-image: url('/imgs/back.jpg');
+
+        /* Prevent the image from repeating/tiling */
+        background-repeat: no-repeat;
+
+        /* Center the image on the screen */
+        background-position: center;
+
+        /* Stretch the image to perfectly cover the entire screen */
+        background-size: cover;
+
+        /* Keep the background fixed in place while scrolling */
+        background-attachment: fixed;
+
+        /* Ensure the body takes up the full screen height */
+        min-height: 100vh;
+        margin: 0;
+}
+
+.produtos {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tenis {
+    width: 250px;
+    padding: 20px;
+    border: 1.2px solid #222;
+    transition: 0.6s;
+    background-color: white;
+}
+
+.tenis strong {
+    color: red;
+}
+
+.tenis img {
+    border: #222 1px solid;
+    width: 100%
+}
+
+.tenis:hover {
+    width: 300px;
+    padding: 20px;
+    border: 1.2px solid #401aa7;
+}
+
+.navbar {
+    height: 70px;
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    text-decoration: none;
+    
+}
+
+.links-nav {
+    display: flex;
+    gap: 25px;
+}
+
+.links-nav a {
+    color: #222;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.links-nav a:hover {
+    color: #007bff;
+}
+
+
+.carrinhodiv {
+    display: flex;
+    justify-content: center;
+}
+
+.carrinho {
+    margin: 20px;
+    width: 1800px;
+    height: 1000px;
+    padding: 20px;
+    border: 1.2px solid #222;
+    transition: 0.6s;
+    background-color: white;
+}
