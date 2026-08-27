@@ -107,3 +107,11 @@ body {
     transition: 0.6s;
     background-color: white;
 }
+
+.carrinhoCont {
+    width: max-content;
+    height: max-content;
+    background-color: white;
+    margin: 10px;
+    padding: 6px;
+}

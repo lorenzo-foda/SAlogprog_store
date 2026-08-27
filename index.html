@@ -13,7 +13,6 @@
         </a>
 
         <div class="links-nav">
-            <a href="carrinho.html">carrinho</a>
             <a href="index.html">início</a>
         </div>
         
@@ -26,7 +25,7 @@
                 <p>eh um tenis</p>
                 <strong>R$ 200.00</strong>
 
-                <button onclick="addCart(1, 'tenis1', 200.00)"> 
+                <button onclick="adicionarProduto(tenis1)"> 
                     adicionar ao carrinho
                 </button>
             </article>
@@ -37,7 +36,7 @@
                 <p>eh um tenis</p>
                 <strong>R$ 220.00</strong>
 
-                <button onclick="addCart(2, 'tenis2', 220.00)">
+                <button onclick="adicionarProduto(tenis2)">
                     adicionar ao carrinho
                 </button>
             </article>
@@ -48,14 +47,30 @@
                 <p>eh um tenis</p>
                 <strong>R$ 301.00</strong>
 
-                <button onclick="addCart(3, 'tenis3', 301.00)">
+                <button onclick="adicionarProduto(tenis3)">
                     adicionar ao carrinho
                 </button>
             </article>
         </div>
 
-        <div></div>
-        <div></div>
+    
+        <div class="carrinhoCont">
+            <h3 >CARRINHO</h3>
+            <div id="carrinho"></div>
+            <div id="cupom">
+                <input type="text" id="codigoCupom" placeholder="Digite seu cupom">
+                <button onclick="aplicarCupom()">
+                    Aplicar cupom
+                </button>
+
+                <p id="mensagemCupom"></p>
+            </div>
+
+            <p id="subtotal">Subtotal: R$ 0,00</p>
+            <p id="desconto">Desconto: R$ 0,00</p>
+            <h3 id="total">Total: R$ 0,00</h3>
+        </div>
+
     </main>
 
     <script src="main.js"></script>
